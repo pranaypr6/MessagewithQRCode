@@ -28,7 +28,7 @@ const App = () => {
   const [error, setError] = useState(false);
 
   const getQr = () => {
-    return <QRCode value={qrQuery} renderAs="svg" />;
+    return <QRCode value={qrQuery} />;
   };
 
   useEffect(() => {
