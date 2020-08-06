@@ -1,0 +1,15 @@
+// <a href="#" onClick={() => download()}>
+// download
+// </a>
+  // const download = () => {
+  //   var element = document.createElement("a");
+  //   var file = new Blob(
+  //     [
+  //       "https://timesofindia.indiatimes.com/thumb/msid-70238371,imgsize-89579,width-400,resizemode-4/70238371.jpg",
+  //     ],
+  //     { type: "image/*" }
+  //   );
+  //   element.href = URL.createObjectURL(file);
+  //   element.download = "image.jpg";
+  //   element.click();
+  // };
