@@ -17,6 +17,7 @@ import {
   Button,
   Alert,
 } from "reactstrap";
+import Footer from "./Footer";
 const QRCode = require("qrcode.react");
 
 const App = () => {
@@ -49,21 +50,26 @@ const App = () => {
     <div>
       <div>
         <Navbar light expand="md" className="nav-bar">
-          <NavbarBrand href="/" style={{ color: "#007bff", fontSize: "25px" }}>
+          <NavbarBrand
+            href="/"
+            className="navbrand"
+            style={{ color: "#007bff", fontSize: "25px" }}
+          >
             Express with QR
           </NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/" style={{ color: "#007bff" }}>
-                  Components
+                <NavLink href="#about" className="navitem">
+                  Contact
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://github.com/reactstrap/reactstrap"
-                  style={{ color: "#007bff" }}
+                  href="https://github.com/pranaypr6"
+                  target="blank"
+                  className="navitem"
                 >
                   GitHub
                 </NavLink>
@@ -110,6 +116,7 @@ const App = () => {
           </div>
         </Col>
       </Row>
+      <Footer />
     </div>
   );
 };
