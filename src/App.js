@@ -51,7 +51,7 @@ const App = () => {
       <div>
         <Navbar light expand="md" className="nav-bar">
           <NavbarBrand
-            href="/"
+            href="https://pranaypr6.github.io/MessagewithQRCode/"
             className="navbrand"
             style={{ color: "#007bff", fontSize: "25px" }}
           >
